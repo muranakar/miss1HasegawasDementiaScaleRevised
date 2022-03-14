@@ -16,14 +16,14 @@ final class RealmTargetPerson: Object {
     @Persisted
     var name = ""
     @Persisted
-    var assessmentItems: List<RealmAssessment>
+    var assessments: List<RealmAssessment>
     @Persisted(originProperty: "targetPersons")
     var assessors: LinkingObjects<RealmAssessor>
 }
 
 extension RealmTargetPerson: RealmEntityParent {
     var childlen: List<RealmAssessment> {
-        assessmentItems
+        assessments
     }
 
     func update(value: TargetPerson) {

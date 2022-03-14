@@ -10,7 +10,6 @@ import RealmSwift
 
 // MARK: - TimerAssessmentRepository
 protocol AssessmentRepository {
-
     // MARK: Read objects.
     /// 時間評価を読込む
     func load(id: Assessment.ID) -> Assessment?

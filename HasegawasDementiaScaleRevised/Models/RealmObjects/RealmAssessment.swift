@@ -35,7 +35,7 @@ final class RealmAssessment: Object {
     var createdAt: Date!
     @Persisted
     var updatedAt: Date?
-    @Persisted(originProperty: "timerAssessments")
+    @Persisted(originProperty: "assessments")
     var targetPersons: LinkingObjects<RealmTargetPerson>
 }
 
