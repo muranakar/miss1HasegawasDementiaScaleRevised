@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Assessment View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="assessment" id="Y6W-OH-hqX" customClass="AssessmentViewController" customModule="TimerAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="80" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npX-Vr-7hl" customClass="RoundedTimerButton" customModule="TimerAssessment" customModuleProvider="target">
+                                <rect key="frame" x="87" y="558" width="80" height="80"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="start"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="start:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="57x-GJ-9gJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="80" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXL-Fh-19C" customClass="RoundedTimerButton" customModule="TimerAssessment" customModuleProvider="target">
+                                <rect key="frame" x="167" y="658" width="80" height="80"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="reset"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="reset:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="46h-IU-WWl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhR-eP-KkX" customClass="TimerLabel" customModule="TimerAssessment" customModuleProvider="target">
+                                <rect key="frame" x="80" y="382" width="254" height="72"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44O-5v-DFk">
+                                <rect key="frame" x="169" y="260" width="76.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="評価項目" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqe-ym-cYe">
+                                <rect key="frame" x="146.5" y="210" width="121.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="80" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYL-v9-VRY" customClass="RoundedTimerButton" customModule="TimerAssessment" customModuleProvider="target">
+                                <rect key="frame" x="247" y="558" width="80" height="80"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="stop"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stop:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="C46-HB-m5h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JXL-Fh-19C" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="250" id="0PB-o7-8cl"/>
+                            <constraint firstItem="44O-5v-DFk" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="6mD-4h-XZg"/>
+                            <constraint firstItem="wYL-v9-VRY" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="80" id="M4a-EX-bpD"/>
+                            <constraint firstItem="iqe-ym-cYe" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="U6v-a6-YXs"/>
+                            <constraint firstItem="npX-Vr-7hl" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="-80" id="YQN-5v-L3p"/>
+                            <constraint firstItem="qhR-eP-KkX" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-30" id="Zcd-uH-f6Q"/>
+                            <constraint firstItem="qhR-eP-KkX" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="c0T-cW-fOU"/>
+                            <constraint firstItem="44O-5v-DFk" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-170" id="dp4-cv-fHu"/>
+                            <constraint firstItem="wYL-v9-VRY" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="150" id="m2f-9k-1Go"/>
+                            <constraint firstItem="npX-Vr-7hl" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="150" id="mJ0-Z4-dbe"/>
+                            <constraint firstItem="JXL-Fh-19C" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="pxZ-0D-qdG"/>
+                            <constraint firstItem="iqe-ym-cYe" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-220" id="s4G-j4-3BI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2ev-Ro-ax2">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="YgK-Ni-iDl">
+                            <connections>
+                                <segue destination="sKB-SQ-Og3" kind="unwind" unwindAction="backToFunctionSelectionTableViewControllerWithSegue:" id="7Nf-fD-c3H"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" id="2I8-QT-HgC">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="nC7-Am-PAR">
+                                <rect key="frame" x="360" y="7" width="34" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QgL-6a-Iug"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="assessmentItemLabel" destination="44O-5v-DFk" id="EPk-Gs-bs3"/>
+                        <outlet property="saveButton" destination="nC7-Am-PAR" id="6Z6-eX-5TD"/>
+                        <outlet property="startButton" destination="npX-Vr-7hl" id="UsQ-bo-DKB"/>
+                        <outlet property="stopButton" destination="wYL-v9-VRY" id="eyI-OE-Kie"/>
+                        <outlet property="timerLabel" destination="qhR-eP-KkX" id="oHB-G7-he1"/>
+                        <segue destination="GvW-qb-Ua6" kind="show" identifier="save" destinationCreationSelector="makeDetailWithCoder:sender:segueIdentifier:" id="d49-12-f51"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="sKB-SQ-Og3" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="892.75362318840587" y="90.401785714285708"/>
+        </scene>
+        <!--DetailAssessment-->
+        <scene sceneID="IEI-cj-ZlG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailAssessment" id="GvW-qb-Ua6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6rd-kX-xUw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PpB-hL-rKD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1693" y="90"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="JXL-Fh-19C">
+            <size key="intrinsicContentSize" width="80" height="80"/>
+        </designable>
+        <designable name="npX-Vr-7hl">
+            <size key="intrinsicContentSize" width="80" height="80"/>
+        </designable>
+        <designable name="qhR-eP-KkX">
+            <size key="intrinsicContentSize" width="254" height="72"/>
+        </designable>
+        <designable name="wYL-v9-VRY">
+            <size key="intrinsicContentSize" width="80" height="80"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
